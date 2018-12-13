@@ -93,7 +93,7 @@ public class codeUtil {
     public static void main(String[] args) {
 //        输出
         try {
-            OutputStream out = new FileOutputStream("D:\\workspace\\itrip\\src\\main\\webapp\\static\\image\\code\\"+"yanzhengma");
+            OutputStream out = new FileOutputStream("生成验证码图片路径"+"验证码名称");
             Map<String,Object> map = codeUtil.generateCodeAndPic();
             ImageIO.write((RenderedImage)map.get("codeImage"),"jpg",out);
             System.out.println("验证码为："+map.get("code"));
